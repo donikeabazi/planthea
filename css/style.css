@@ -1,37 +1,51 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
 .wrapper{
     width: 961px;
     margin: 0 auto;
 }
-
 #header{
+    margin: 0;
+    height: 94px;
     width: 100%;
-    height: 50px;
+    border-bottom: 5px solid darkseagreen;
 }
-
+.logo{
+    float: left;
+}
+.menu{
+    float: right;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    float: left;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 33px 10px 44px 10px;
+    color: darkseagreen;
+}
+.menu ul li a:hover{
+    color: #ffffff;
+    background: darkseagreen;
+}
 #content{
+    margin: 0 auto;
     width: 100%;
     height: 600px;
 }
-
 #footer{
     width: 100%;
     height:400px;
 }
 
-.logo{
-    float: left;
-}
-
-.menu{
-    float: right;
-}
-
-.menu ul li{
-    margin: 5px;
-    padding: 5px;
-    background: floralwhite;
-    display: inline;
-}
 
 
 
