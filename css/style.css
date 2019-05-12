@@ -140,7 +140,7 @@ body{
     height:600px;
 }
 .last-part{
-    width: 225px;
+    width: 265px;
     float:left; 
     padding-top: 20px;
     padding-right: 10px;
@@ -176,7 +176,7 @@ body{
 }
 
 .last-part dl dd{
-    width: 225px;
+    width: 265px;
     float: left;
     margin-left: 0;
     padding-left: 0;
@@ -192,7 +192,7 @@ body{
 }
 
 .last-part1{
-    width: 225px;
+    width: 265px;
     height: 150px;
 }
 
@@ -222,7 +222,7 @@ body{
     color: #989898;
     font-size: 13px;
     height: 30px;
-    width: 225px;
+    width: 265px;
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 8px;
@@ -236,7 +236,7 @@ body{
     font-size: 13px;
     background-color: #383838;
     height: 110px;
-    width: 225px;
+    width: 265px;
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 8px;
