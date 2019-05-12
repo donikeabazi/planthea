@@ -82,6 +82,31 @@ body{
     background: darkseagreen;
     color: #fff;
 }
+.article{
+    width: 300px;
+    height: 280px;
+    margin: 10px;   
+    border-right: 5px solid darkseagreen;
+}
+.article img{
+    margin: 10px;
+}
+.article h1{
+    margin: 10px;
+    color: darkseagreen; 
+   
+}
+.article a{
+    border:1px solid darkseagreen;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkseagreen;
+}
+.article a:hover{
+    background: darkseagreen;
+    color: #fff;
+}
 .Welcome-Text{
     position: relative;
     width:600px;
