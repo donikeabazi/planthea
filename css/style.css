@@ -239,5 +239,17 @@ body{
     border-radius: 8px;
     border-color: #8FBC8F;
 }
+.copyright{
+  float: left;
+   margin-top: 20px;
+}
+
+.copyright p{
+  font-size: 13px;
+  font-family: "Georgia";
+  color: #3CB371;
+  line-height: 1.6;
+  
+}
 
 
