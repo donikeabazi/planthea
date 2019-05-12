@@ -57,36 +57,19 @@ body{
 .icon{
     width: 300px;
     height: 280px;
-    margin: 10px;
-}
-.icon{
-    width: 300px;
-    height: 280px;
-    margin: 10px;
-}
-.icon img{
-    margin: 10px;
-}
-.icon h1{
-    margin: 10px;
-}
-.icon a{
-    border:1px solid darkseagreen;
-    padding: 8px 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: darkseagreen;
-}
-.icon a:hover{
-    background: darkseagreen;
-    color: #fff;
+    margin: 10px;   
+    border-right: 5px solid darkseagreen;
 }
 
 .icon img{
     margin: 10px;
 }
+    
+
 .icon h1{
     margin: 10px;
+    color: darkseagreen;
+    
 }
 .icon a{
     border:1px solid darkseagreen;
