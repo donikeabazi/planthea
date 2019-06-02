@@ -46,7 +46,7 @@ text-decoration: none; padding: 27px 30px 0px 30px; color:black;font-weight: bol
 
 
 
-.slider-container{
+.slide-container{
     width:800px;
     height:600px;
     margin-left:auto;
@@ -77,6 +77,15 @@ text-decoration: none; padding: 27px 30px 0px 30px; color:black;font-weight: bol
     width:10px;
     border-radius:5px;
     background-color: white;
+}
+#slider-image-1:target ~ .image-container{
+    left:0px;
+}
+#slider-image-2:target ~ .image-container{
+    left: -800px;
+}
+#slider-image-3:target ~ .image-container{
+    left: -1600px;
 }
 /*
 .menu a{
