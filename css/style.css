@@ -26,7 +26,29 @@ body{
     border-left: 5px solid white;
     color: white;
 }
-.menu{
+
+.right-menu a{
+    float:right;
+}
+.right-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.right-menu ul li {
+    display: inline;
+    float: right;
+}
+
+.right-menu ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+
+.menu a{
     float: right;
 }
 .menu ul{
@@ -38,7 +60,7 @@ body{
     display: inline;
 }
 .menu ul li a{
-    float: left;
+    float: right;
     text-transform: capitalize;
     text-decoration: none;
     padding: 33px 10px 32px 10px;
