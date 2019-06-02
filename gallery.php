@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Planthea</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+    <body bgcolor="#ffffff">
+        <div class="header-img">
+            <div class="wrapper">
+                <div class="logo">
+                    <h>Planthea</h>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <div class="wrapper">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="">About us</a> </li>
+                        <li><a href="gallery.html">Gallery</a> </li>
+                        <li><a href="">Services</a> </li>
+                        <li><a href="">Articles</a> </li>
+                        <li><a href="">Contact us</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <!--script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+} 
+        </script-->
+        
+    </body>
+</html>

@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Planthea</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 <body bgcolor="#ffffff">
-
     
     
     <div class="wrapper">
             <div class="right-menu">
                     <ul>
-                        <li><a href="login.html">Log In</a></li>
+                        <li><a href="login.php">Log In</a></li>
                     </ul>
                 </div>
         </div>
@@ -31,7 +30,7 @@
     <nav class="menu">
         <ul>
             <li><a href="">About us</a> </li>
-            <li><a href="gallery.html">Gallery</a> </li>
+            <li><a href="gallery.php">Gallery</a> </li>
             <li><a href="">Services</a> </li>
             <li><a href="">Articles</a> </li>
             <li><a href="">Contact us</a> </li>
