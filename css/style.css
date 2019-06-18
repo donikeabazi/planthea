@@ -47,16 +47,16 @@ text-decoration: none; padding: 27px 30px 0px 30px; color:black;font-weight: bol
 
 
 .slide-container{
-    width:510px;
-    height:340px;
+    width:1920px;
+    height:1080px;
     margin-left:auto;
     margin-right:auto;
     overflow:hidden;
     text-align: center;
 }
 .image-container{
-    width:1530px;
-    height:340px;
+    width:7680px;
+    height:1080px;
     position: relative;
     transition: left 2s;
     -webkit-transition:left 2s;
@@ -82,10 +82,13 @@ text-decoration: none; padding: 27px 30px 0px 30px; color:black;font-weight: bol
     left:0px;
 }
 #slider-image-2:target ~ .image-container{
-    left: -510px;
+    left: -1920px;
 }
 #slider-image-3:target ~ .image-container{
-    left: -1020px;
+    left: -3840px;
+}
+#slider-image-4:target ~ .image-container{
+    left: -5760px;
 }
 /*
 .menu a{
