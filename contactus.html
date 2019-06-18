@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Planthea</title>
+    <link rel="stylesheet" href="css/contactus-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-                          
+            $(".btn").click(function(){
+               $("input[type='text'], textarea").val(""); 
+            });              
         });
     </script>
 </head>
@@ -42,6 +46,7 @@
                     <textarea placeholder="Your message"></textarea>
                 </div>
             </div>
+            <div class= "btn">send form</div>
         </div>
     </div>
 </body>    
