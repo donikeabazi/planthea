@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Planthea</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+    <body bgcolor="#ffffff">
+        <div class="header-img">
+            <div class="wrapper">
+                    <div class="logo">
+                        <h>Planthea</h>
+                    </div>
+            </div>
+        </div>
+        <div id="header">
+            <div class="wrapper">
+                    <nav class="menu">
+                        <?php include 'includes/menu.php'; ?>  
+                    </nav>
+                </div>
+        </div>
+       
+            <div class="slide-container">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+                <span id="slider-image-4"></span>
+                <div class="image-container">
+                    <img src="images/Crocus.jpg" class="slider-image" s>
+                    <img src="images/Pinkflowers.jpg" class="slider-image">
+                    <img src="images/Red.jpg" class="slider-image">
+                    <img src="images/Daisy.jpg" class="slider-image"> </div>
+                    <div class="button-container">
+                        <a href="#slider-image-1" class="slider-button"></a>
+                        <a href="#slider-image-2" class="slider-button"></a>
+                        <a href="#slider-image-3" class="slider-button"></a>
+                        <a href="#slider-image-4" class="slider-button"></a>
+
+                    </div>
+            </div>
+        
+        <!--script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+} 
+        </script-->
+        
+    </body>
+</html>
