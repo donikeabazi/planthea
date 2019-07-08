@@ -15,13 +15,7 @@
     </script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class = "content">
-            <h1>CONTACT FORM</h1>
-            <p>Connect with us by sendind your views.</p>
-            
-            </div>
-        </div>
+
     <div class="header-img">
         <div class="wrapper">
             <div class="logo">
