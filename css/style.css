@@ -15,8 +15,8 @@ body{
 .header-img{
     background: url(background.jpg);
     background-size: 100%;
-    height: 122px;
-    background-repeat: no-repeat; 
+    height: 90px;
+    background-repeat: no-repeat;
 }
 .logo {
     float: left;
@@ -24,7 +24,6 @@ body{
 .logo h{
     text-transform: lowercase;
     font-size: 37px;
-    margin: 0px 5px 5px 5px;
     padding-left: 5px;
     border-bottom: 5px solid white;
     border-left: 5px solid white;
@@ -33,30 +32,32 @@ body{
 .logo a{
     text-decoration: none;
 }
-
-.right-menu a{
-    float:right;
-}
-.right-menu ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.right-menu ul li {
-    display: inline;
-    float: right;
+.menu-logs{
+  float: right;
+  margin: 25px;
 }
 
-.right-menu ul li a {
-    text-decoration: none;
-    font-size: 13px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: white;
+.menu-logs ul{
+  margin:0; padding: 0;
+  list-style: none;
+}
+
+.menu-logs ul li{
+  display: inline;
+}
+
+.menu-logs ul li a{
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 5px 8px 5px 8px;
+  margin: 0 5px 0 5px;
+  color: white;
+  font-weight: bold;
+  background-color: darkseagreen;
 }
 
 .menu a{
-    float: right;
+    float: left;
 }
 .menu ul{
     margin: 0;
@@ -83,14 +84,14 @@ border-bottom: 2px solid darkseagreen;}
     float: left;
     width: 300px;
     height: 280px;
-    margin: 10px;   
+    margin: 10px;
     border-right: 5px solid darkseagreen;
 }
 
 .article{
     width: 290px;
     height: 280px;
-    margin: 12px;   
+    margin: 12px;
     border-right: 5px solid darkseagreen;
 }
 .article img{
@@ -98,8 +99,8 @@ border-bottom: 2px solid darkseagreen;}
 }
 .article h1{
     margin: 10px;
-    color: darkseagreen; 
-   
+    color: darkseagreen;
+
 }
 .article a{
     border:1px solid darkseagreen;
@@ -176,7 +177,7 @@ border-bottom: 2px solid darkseagreen;}
     align-items: center;
     text-align: center;
 }
- 
+
 .slide-content span{
     font-size: 5rem;
     color: azure;
@@ -229,4 +230,82 @@ border-bottom: 2px solid darkseagreen;}
 }
 .footer-menu ul li a:hover{
     cursor: pointer;
+}
+
+
+/*  ------------  contactus content ------------- */
+
+.contactus{
+  background: #90EE90;
+}
+
+.form{
+   width: 100%;
+    margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form{
+    width: 100%;
+    min-height: 65px;
+    margin:10px 0;
+    overflow: hidden;
+}
+
+.form input[type = "text"],
+.form textarea{
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-color: #3CB371;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.0125),
+                0 0 8px(76,161,175,0.5);
+}
+
+.form .label{
+    margin-bottom: 5px;
+}
+
+.top-form .inner-form{
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child{
+    margin-right: 0;
+}
+
+.middle-form{
+    clear: both;
+}
+
+.bottom-form textarea{
+    height: 120px;
+}
+
+.btn{
+    background: #3CB371;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 2px;
+    text-align:center;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+::-webkit- input-placheloder{
+     font-family: 'Kavivanar', cursive;
+    text-transform: capitalize;
 }

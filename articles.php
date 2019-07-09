@@ -1,27 +1,5 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Planthea</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    </head>
-    <body bgcolor="#ffffff">
-        <div class="header-img">
-            <div class="wrapper">
-                <div class="logo">
-                    <h>Planthea</h>
-                </div>
-            </div>
-        </div>
-         <div id="header">
-            <div class="wrapper">
-                <nav class="menu">
-                    <?php include 'includes/menu.php'; ?>
-                </nav>
-            </div>
-        </div>
-        
+<?php include 'includes/header.php'; ?>
+
         <div id="content">
             <div class="wrapper">
             <div class="article">
@@ -44,16 +22,5 @@
         </div>
                 </div>
         </div>
-        <div class="wrapper">
-        <div id="footer">
-            <div class="footer-menu">
-                <?php include 'includes/footer-menu.php' ?>
-            </div>
-        </div>
-           <div class="copyright">
-         <p>Copyright © 2019 Planthea - All Rights Reserved</p>
-     </div> 
-            
-            </div>
         
-    </body>
+<?php include 'includes/footer.php'; ?>
