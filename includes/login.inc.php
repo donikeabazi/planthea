@@ -25,14 +25,22 @@ if(isset($_POST['login-submit'])){
         if($pwdCheck == false){
           header("Location: ../index.php?error=worngpwd");
           exit();
-        }else if ($pwdCheck == true) {
+        }else if ($pwdCheck == true && $row['idUsers'] == '1') {
           session_start();
-          $_SESSION['userId'] = $row['idUsers'];
-          $_SESSION['userUid'] = $row['uidUsers'];
+          $_SESSION['adminId'] = $row['idUsers'];
+          $_SESSION['adminUid'] = $row['uidUsers'];
 
           header("Location: ../index.php?login=success");
           exit();
-        }else {
+        }else if($pwdCheck == true){
+          session_start();
+          $_SESSION['userId'] = $row['idUsers'];
+          $_SESSION['userUid'] = $row['uidUsers'];
+          header("Location: ../index.php?login=success");
+          exit();
+        }
+
+        else {
           header("Location: ../index.php?error=worngpwd");
           exit();
         }

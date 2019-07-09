@@ -21,10 +21,13 @@ h3{
       <div class="dashboard">
 
         <?php
-          if(isset($_SESSION['userId'])){
+          if(isset($_SESSION['adminId'])){
             echo '<h3>Your Dashboard</h3>';
             include 'includes/dashboard.inc.php';
-          }else {
+          }else if(isset($_SESSION['userId'])){
+            echo '<p class="login-status">You are logged in!</p>';
+          }
+            else{
             echo '<p class="login-status">You are logged out!</p>';
           }
 

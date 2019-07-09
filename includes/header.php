@@ -32,7 +32,7 @@
             <nav class="menu-logs">
               <ul>
               <?php
-               if(isset($_SESSION['userId'])){
+               if(isset($_SESSION['adminId']) || isset($_SESSION['userId'])){
                  echo '<li><a href="includes/logout.inc.php">Logout</a></li>';
                }else {
                  echo '<li><a href="login.php">Log in</a></li>
