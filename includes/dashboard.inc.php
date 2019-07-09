@@ -18,7 +18,7 @@
 </style>
 <ul>
   <li class="row-mng"><label>Manage user records:</label>
-  <a class="mng" href="users.php">Manage Users</a></li>
+  <a class="mng" href="php_crud/users.php">Manage Users</a></li>
 
   <li class="row-mng"><label>Manage article records:</label>
   <a class="mng" href="editArticles.php">Manage Articles</a></li>

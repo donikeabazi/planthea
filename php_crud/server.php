@@ -7,17 +7,17 @@
     $edit_state =false;
 
     //connect to database
-    $db = mysqli_connect('localhost', 'root', '', 'crud');
+    $db = mysqli_connect('localhost', 'root', '', 'planthea');
 
     //if save button is clicked
     if(isset($_POST['save'])){
         $name = $_POST['name'];
         $address = $_POST['address'];
-        
+
         $query = "INSERT INTO info (name, address) VALUES ('$name', '$address')";
        mysqli_query($db, $query);
         $_SESSION['msg']= "Address saved";
-        header('location: index.php'); //redirect to index page after inserting
+        header('location: users.php'); //redirect to index page after inserting
     }
 
     //update records
@@ -25,10 +25,10 @@
         $name = mysqli_real_escape_string($_POST['name']);
         $address = mysqli_real_escape_string($_POST['address']);
         $id = mysqli_real_escape_string($_POST['id']);
-        
+
         mysqli_query($db, "UPDATE info SET name = '$name', address ='$address' WHERE id='$id'");
         $_SESSION['msg'] = "Address updated";
-        header('location: index.php');
+        header('location: users.php');
     }
 
     //delete records
@@ -36,7 +36,7 @@
         $id = $_GET['del'];
         mysqli_query($db, "DELETE FROM info WHERE id=$id");
         $_SESSION['msg'] = "Address deleted";
-        header('location: index.php');
+        header('location: users.php');
     }
     //retrieve records
     $results = mysqli_query($db, "SELECT * FROM info") or die(mysqli_error($db));
