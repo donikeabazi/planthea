@@ -5,9 +5,10 @@
         $edit_state = true;
         $rec = mysqli_query($db, "SELECT * FROM users WHERE idUsers=$id");
         $record = mysqli_fetch_array($rec);
-        $name = $record['name'];
-        $address = $record['address'];
-        $id = $record['id'];
+        $uid = $record['uidUsers'];
+        $mail = $record['emailUsers'];
+      //  $pwd = $record['pwdUsers'];
+        $id = $record['idUsers'];
     }
 ?>
 <!DOCTYPE html>
@@ -28,21 +29,23 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Adress</th>
+                <th>Username</th>
+                <th>Email</th>
+                <!--th>Password</th-->
                 <th colspan="2">Action</th>
             </tr>
         </thead>
         <tbody>
             <?php while ($row = mysqli_fetch_array($results)){ ?>
             <tr>
-                <td><?php echo $row['name']; ?></td>
-                <td><?php echo $row['address']; ?></td>
+                <td><?php echo $row['uidUsers']; ?></td>
+                <td><?php echo $row['emailUsers']; ?></td>
+                <!--td><?php echo $row['pwdUsers']; ?></td-->
                 <td>
-                    <a class="edit_btn" href = "users.php?edit=<?php echo $row ['id']; ?>">Edit</a>
+                    <a class="edit_btn" href = "users.php?edit=<?php echo $row ['idUsers']; ?>">Edit</a>
                 </td>
                 <td>
-                    <a class="del_btn" href = "server.php?del=<?php echo$row['id']; ?>">Delete</a>
+                    <a class="del_btn" href = "server.php?del=<?php echo $row['idUsers']; ?>">Delete</a>
                 </td>
             </tr>
             <?php } ?>
@@ -51,13 +54,17 @@
     <form method="post" action="server.php">
     <input type="hidden" name="id" value="<?php echo $id; ?>">
         <div class="input-group">
-            <label>Name</label>
-            <input type="text" name="name" value="<?php echo $name; ?> ">
+            <label>Username</label>
+            <input type="text" name="uid" value="<?php echo $uid; ?> ">
         </div>
         <div class="input-group">
-            <label>Address</label>
-            <input type="text" name="address" value="<?php echo $address; ?> ">
+            <label>Email</label>
+            <input type="text" name="mail" value="<?php echo $mail; ?> ">
         </div>
+        <!-- <div class="input-group">
+            <label>Password</label>
+            <input type="text" name="pwd" value="<?php echo $pwd; ?> ">
+        </div> -->
         <div class="input-group">
         <?php if($edit_state == false): ?>
             <button type="submit" name="save" class="btn">Save</button>

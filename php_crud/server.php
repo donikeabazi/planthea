@@ -1,8 +1,9 @@
 <?php
     session_start();
  //initialize variables
-    $name = "";
-    $address = "";
+    $uid = "";
+    $mail = "";
+    $pwd ="";
     $id = 0;
     $edit_state =false;
 
@@ -11,10 +12,11 @@
 
   //if save button is clicked
     if(isset($_POST['save'])){
-        $name = $_POST['name'];
-        $address = $_POST['address'];
+        $uid = $_POST['uidUsers'];
+        $mail = $_POST['emailUsers'];
+        //$pwd = $_POST['pwdUsers'];
 
-        $query = "INSERT INTO users (name, address) VALUES ('$name', '$address')";
+        $query = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES ('$uid', '$mail','$pwd')";
        mysqli_query($db, $query);
         $_SESSION['msg']= "Address saved";
         header('location: users.php'); //redirect to index page after inserting
@@ -22,11 +24,12 @@
 
     //update records
     if(isset($_POST['update'])){
-        $name = mysqli_real_escape_string($_POST['name']);
-        $address = mysqli_real_escape_string($_POST['address']);
+      $uid = mysqli_real_escape_string($_POST['uid']);
+      $mail = mysqli_real_escape_string($_POST['mail']);
+      //$pwd = mysqli_real_escape_string($_POST['pwd']);
         $id = mysqli_real_escape_string($_POST['id']);
 
-        mysqli_query($db, "UPDATE info SET name = '$name', address ='$address' WHERE id='$id'");
+        mysqli_query($db, "UPDATE users SET uidUsers = '$uid', emailUsers ='$mail' WHERE idUsers='$id'");
         $_SESSION['msg'] = "Address updated";
         header('location: users.php');
     }
@@ -34,10 +37,10 @@
     //delete records
     if(isset($_GET['del'])){
         $id = $_GET['del'];
-        mysqli_query($db, "DELETE FROM info WHERE id=$id");
+        mysqli_query($db, "DELETE FROM users WHERE idUsers=$id");
         $_SESSION['msg'] = "Address deleted";
         header('location: users.php');
     }
     //retrieve records
-    $results = mysqli_query($db, "SELECT * FROM info") or die(mysqli_error($db));
+    $results = mysqli_query($db, "SELECT * FROM users") or die(mysqli_error($db));
 ?>
