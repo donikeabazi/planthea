@@ -3,7 +3,7 @@
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $edit_state = true;
-        $rec = mysqli_query($db, "SELECT * FROM info WHERE id=$id");
+        $rec = mysqli_query($db, "SELECT * FROM users WHERE idUsers=$id");
         $record = mysqli_fetch_array($rec);
         $name = $record['name'];
         $address = $record['address'];

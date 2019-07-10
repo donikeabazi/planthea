@@ -210,7 +210,11 @@ border-bottom: 2px solid darkseagreen;}
 }
 
 .footer-menu{
-    margin: 50px 0 0 0;
+    margin: 50px;
+    display: inline;
+    height: 22px;
+    float: left;
+    text-align: center;
 }
 .footer-menu ul{
     margin: 0;
@@ -231,6 +235,29 @@ border-bottom: 2px solid darkseagreen;}
 .footer-menu ul li a:hover{
     cursor: pointer;
 }
+.footer-menu p, h4{
+  color: darkseagreen;
+  font-size: 14px;
+}
+
+.social-icon{
+  clear: both;
+  margin: 95px;
+  width: 211px;
+}
+.social-icon ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social-icon ul li{
+    display: inline;
+    margin: 10px;
+}
+.social-icon ul li a:hover{
+    cursor: pointer;
+}
+
 
 
 /*  ------------  contactus content ------------- */
